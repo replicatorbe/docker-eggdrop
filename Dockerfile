@@ -1,3 +1,4 @@
+FROM debian:jessie
 MAINTAINER Jérôme Fafchamps (sMug [replicatorbe]) <smug@smug.fr>
 
 RUN apt-get update && apt-get upgrade -y
