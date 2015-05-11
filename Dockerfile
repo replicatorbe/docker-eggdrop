@@ -12,3 +12,4 @@ WORKDIR /home/eggdrop
 RUN wget ftp://ftp.eggheads.org/pub/eggdrop/source/1.6/eggdrop1.6.21.tar.gz
 RUN tar zxvf eggdrop1.6.21.tar.gz
 RUN cd eggdrop1.6.21 && ./configure --with-tclinc=/usr/include/tcl8.6/tcl.h --with-tcllib=/usr/lib/x86_64-linux-gnu/libtcl8.6.so && make config && make && make install
+RUN cd eggdrop && mkdir tmp
